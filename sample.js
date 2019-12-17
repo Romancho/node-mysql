@@ -14,10 +14,10 @@ conn.connect(function(err) {
 
     console.log("Connected!");
 
-    var sql = "INSERT INTO users (login, email, password) VALUES ('test', 'test@test.ru', '123456')";
-    conn.query(sql, function (err, result) {
+    let sql = "INSERT INTO users (login, email, password) VALUES ('test', 'test@test.ru', '123456')";
+    conn.query(sql, function (err) {
         if (err) throw err;
-        console.log("1 record inserted");
+        console.log("1 record inserted:");
     });
 
 });
